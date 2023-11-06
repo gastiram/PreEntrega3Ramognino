@@ -41,21 +41,27 @@ function mostrarCarrito(){
     }
 }
 
+
 let persona = {
     nombre: usuario,
     edad:0,
     carrito: miCarrito,
     marcaDeRopaPreferida: "",
 }
+
 function elUsuario(){
     persona.edad = prompt("Ingrese su edad");
     persona.marcaDeRopaPreferida = prompt("¿Cual es su marca de ropa preferida?");
     console.log(persona);
 }
 
+
 validarContrasenia();
 llenarCarrito();
 mostrarCarrito();
 elUsuario();
+
+let personaJSON = JSON.stringify(persona);
+localStorage.setItem("persona", personaJSON);
 
 

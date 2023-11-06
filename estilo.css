@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+header .titulo{
+    background-color: aqua;
+    padding: 10px;
+}
+header .carrito{
+    background-color: aqua;
+    padding: 10px;
+}
+
+header .carrito:hover{
+    background-color: rgb(2, 174, 174);
+}
+header nav{
+    padding-left: 20px;
+    background-color: aqua;
+}
+header h3{
+    font-size: 22px;
+}
+header img{
+    width: 25px;
+}
+header div{
+    display: flex;
+}
+.zapas{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.zapas div{
+    padding: 20px;
+    background-color: rgb(189, 32, 152);
+}
+.zapas img{
+    width: 150px;
+}
+.remeras{
+    display: flex;
+    justify-content: center;
+    
+}
+.remeras div{
+    padding: 20px;
+    background-color: blueviolet;
+}
+.remeras img{
+    width: 150px;
+}
+
+.zapas button{
+    display: list-item;
+    margin-left: 75px;
+    padding: 5px;
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+}
+.zapas button:hover{
+    background-color: rgb(0, 207, 207);
+    cursor: pointer;
+}
+.remeras button{
+    display: list-item;
+    margin-left: 75px;
+    padding: 5px;
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+}
+.remeras button:hover{
+    background-color: rgb(0, 207, 207);
+    cursor: pointer;
+}
