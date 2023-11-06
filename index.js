@@ -45,7 +45,7 @@ listaProductos.addEventListener("click", e =>{
 
         mostrarHTML();
     }
-    
+    guardarCarrito();
 });
 
 nuevosProductos.addEventListener("click", (e)=>{
@@ -102,4 +102,7 @@ const mostrarHTML = () => {
 
     valorTotal.innerText = `$${total}`;
     contarProductos.innerText = totalDeProductos;
+};
+const guardarCarrito = () =>{
+    localStorage.setItem("carrito", JSON.stringify(todosLosProductos));
 };
