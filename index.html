@@ -16,44 +16,85 @@
         <nav>
             <section class="carrito">
                 <div>
-                    <a href=""><img src="./img/carrito.png" alt="carritoDeCompras"></a>
-                    <a href=""><h3>0</h3></a>
+                    <span><img src="./img/carrito.png" alt="carritoDeCompras"></span>
+                    <span class="contador-productos">0</span>
+                </div>
+            </section>
+            <section class="contenedor-productos
+            carrito-escondido">
+                <section class="nuevos-productos">
+                    <div class="carrito-productos">
+                        <div class="info-productos">
+                            <span class="cantidad-productos">1</span>
+                            <p class="titulo-productos">Airforce 1 Black</p>
+                            <span class="precio-productos">$50000</span>
+                        </div>
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="iconoBasura">
+                            <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                    </div>
+                </section>
+            
+                <div class="carrito-total">
+                    <h3>Total:</h3>
+                    <span class="totalPagar"></span>
                 </div>
             </section>
         </nav>
     </header>
 
-    <main>
+    <main class="prendas">
         <section class="zapas">
             <div>
                 <img src="./img/zapa1.webp" alt="">
-                <button>+</button>
+                <h4>Airforce 1 White</h4>
+                <p class="precio-zapas">$50000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
             <div>
                 <img src="./img/zapa2.webp" alt="">
-                <button>+</button>
+                <h4>Puma Green</h4>
+                <p class="precio-zapas">$50000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
             <div>
                 <img src="./img/zapa3.webp" alt="">
-                <button>+</button>
+                <h4>Airforce 1 Black</h4>
+                <p class="precio-zapas">$50000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
         </section>
         <section class="remeras">
             <div>
                 <img src="./img/reme1.webp" alt="">
-                <button>+</button>
+                <h4>Remera LA White</h4>
+                <p class="precio-remes">$10000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
             <div>
                 <img src="./img/reme2.webp" alt="">
-                <button>+</button>
+                <h4>Remera Jordan Black</h4>
+                <p class="precio-remes">$10000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
             <div>
                 <img src="./img/reme3.webp" alt="">
-                <button>+</button>
+                <h4>Essentials Brown</h4>
+                <p class="precio-remes">$10000</p>
+                <button class="btnSumarCarrito">Añadir al carrito</button>
             </div>
         </section>
     </main>
-
+    <script src="index.js"></script>
     <!--<script src="code.js"></script>-->
 
 </body>

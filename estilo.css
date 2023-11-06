@@ -19,24 +19,107 @@ header .carrito{
 
 header .carrito:hover{
     background-color: rgb(2, 174, 174);
+    cursor: pointer;
 }
 header nav{
     padding-left: 20px;
     background-color: aqua;
 }
-header h3{
-    font-size: 22px;
-}
+
 header img{
     width: 25px;
 }
 header div{
     display: flex;
 }
+
+.contador-productos{
+    font-size: 22px;
+    position: relative;
+}
+
+.contenedor-productos{
+    position: absolute;
+    top: 50px;
+    right:0px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.carrito-productos{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-productos{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-productos{
+    font-size: 20px;
+}
+
+.precio-productos{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-productos{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.carrito-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.carrito-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.totalPagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.iconoBasura{
+    width: 20px;
+    height: 20px;
+}
+
+.iconoBasura:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.carrito-escondido{
+    display: none;
+}
+
+
+
+
+
+
 .zapas{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    padding-top: 20px;
 }
 .zapas div{
     padding: 20px;
@@ -60,8 +143,10 @@ header div{
 
 .zapas button{
     display: list-item;
-    margin-left: 75px;
+    margin-left: 9px;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: aqua;
     border: none;
     border-radius: 25px;
@@ -72,8 +157,10 @@ header div{
 }
 .remeras button{
     display: list-item;
-    margin-left: 75px;
+    margin-left: 9px;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: aqua;
     border: none;
     border-radius: 25px;
@@ -81,4 +168,9 @@ header div{
 .remeras button:hover{
     background-color: rgb(0, 207, 207);
     cursor: pointer;
+}
+
+.carritoVacio{
+    padding: 20px;
+    text-align: center;
 }
