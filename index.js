@@ -17,6 +17,9 @@ const valorTotal = document.querySelector(".totalPagar");
 
 const contarProductos = document.querySelector(".contador-productos");
 
+const carritoVacio = document.querySelector('.carrito-vacio');
+const carritoTotal = document.querySelector('.carrito-total');
+
 listaProductos.addEventListener("click", e =>{
     if(e.target.classList.contains("btnSumarCarrito")){
         const producto = (e.target.parentElement)
@@ -62,8 +65,14 @@ nuevosProductos.addEventListener("click", (e)=>{
 const mostrarHTML = () => {
 
     if(!todosLosProductos.length){
-        contenedorProductos.innerHTML=`<p class="carritoVacio">El carrito esta vacio</p>`
-    }
+        carritoVacio.classList.remove('hidden');
+		nuevosProductos.classList.add('hidden');
+		carritoTotal.classList.add('hidden');
+	} else {
+		carritoVacio.classList.add('hidden');
+		nuevosProductos.classList.remove('hidden');
+		carritoTotal.classList.remove('hidden');
+	}
 
     nuevosProductos.innerHTML = "";
 
@@ -102,6 +111,7 @@ const mostrarHTML = () => {
 
     valorTotal.innerText = `$${total}`;
     contarProductos.innerText = totalDeProductos;
+
 };
 const guardarCarrito = () =>{
     localStorage.setItem("carrito", JSON.stringify(todosLosProductos));

@@ -170,7 +170,15 @@ header div{
     cursor: pointer;
 }
 
-.carritoVacio{
+.carrito-vacio{
     padding: 20px;
     text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.hidden-info{
+    display: none;
 }
