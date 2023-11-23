@@ -28,6 +28,15 @@ listaProductos.addEventListener("click", e =>{
             titulo: producto.querySelector("h4").textContent,
             precio: producto.querySelector("p").textContent,
         };
+        
+        Swal.fire({
+            position: 'top-right',
+            html: "<p>Item agregado al carrito</p>",
+            width: '50%',
+            background:'lightgreen',
+            showConfirmButton: false,
+            timer: '850'
+         });
 
         const existe = todosLosProductos.some(producto => producto.titulo === infoProducto.titulo)
         
@@ -48,6 +57,7 @@ listaProductos.addEventListener("click", e =>{
 
         mostrarHTML();
     }
+
     guardarCarrito();
 });
 

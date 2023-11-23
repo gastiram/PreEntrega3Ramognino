@@ -6,7 +6,9 @@
 header{
     display: flex;
     justify-content:center;
-    margin-top: 10px;
+    background-color: aqua;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 header .titulo{
     background-color: aqua;
@@ -39,9 +41,9 @@ header div{
 }
 
 .contenedor-productos{
-    position: absolute;
-    top: 50px;
-    right:0px;
+    position:absolute;
+    top: 80px;
+    right:120px;
     background-color: rgb(255, 255, 255);
     width: 400px;
     z-index: 1;
@@ -182,3 +184,5 @@ header div{
 .hidden-info{
     display: none;
 }
+
+
